@@ -72,7 +72,7 @@ const industries = [
           </h3>
 
           <p class="feature-copy">
-            Acquirer EDC terbesar di Indonesia. Sejak Juni 2021, CDS
+            Acquirer EDC terbesar di Indonesia. Sejak tahun 2018, CDS
             dipercaya mengelola lebih dari 100.000 unit terminal EDC di
             65+ kota untuk merchant BCA, termasuk edukasi QRIS Statis,
             aktivasi, dan maintenance berkala.
@@ -88,7 +88,7 @@ const industries = [
               <span class="ft-lbl">Kota jangkauan</span>
             </li>
             <li>
-              <span class="ft-num">2021</span>
+              <span class="ft-num">2018</span>
               <span class="ft-lbl">Mulai kolaborasi</span>
             </li>
           </ul>

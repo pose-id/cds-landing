@@ -84,87 +84,6 @@ const activity = [
 
         <!-- Right: dashboard mockup -->
         <div class="dashboard reveal" v-reveal data-delay="200">
-          <div class="dash-frame">
-            <!-- Top bar -->
-            <div class="dash-top">
-              <div class="dash-brand">
-                <span class="dash-logo" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" width="18" height="18">
-                    <rect width="24" height="24" rx="6" fill="#0F3D2E" />
-                    <path d="M12 5 L18 12 L12 19 L6 12 Z" fill="#FAF7F0" />
-                    <path d="M12 9 L15 12 L12 15 L9 12 Z" fill="#F5B642" />
-                  </svg>
-                </span>
-                <div>
-                  <div class="dash-title">CDS Pulse</div>
-                  <div class="dash-sub">Monitoring Nasional · 14:42 WIB</div>
-                </div>
-              </div>
-              <div class="dash-status">
-                <span class="dash-dot"></span>
-                Live
-              </div>
-            </div>
-
-            <!-- KPI tiles -->
-            <div class="kpis">
-              <div
-                v-for="(k, i) in kpis"
-                :key="k.label"
-                class="kpi"
-                :data-tone="k.tone"
-              >
-                <span class="kpi-label">{{ k.label }}</span>
-                <span class="kpi-value">{{ k.value }}</span>
-                <span class="kpi-delta">{{ k.delta }}</span>
-              </div>
-            </div>
-
-            <!-- Bar chart -->
-            <div class="chart">
-              <div class="chart-head">
-                <span class="chart-title">Uptime per kota</span>
-                <span class="chart-legend">
-                  <span class="lg lg-online"></span> Online
-                  <span class="lg lg-watch"></span> Watch
-                </span>
-              </div>
-              <ul class="bars">
-                <li
-                  v-for="(b, i) in bars"
-                  :key="b.city"
-                  class="bar"
-                  :data-status="b.status"
-                  :style="{ '--w': b.uptime + '%', '--d': (100 + i * 60) + 'ms' }"
-                >
-                  <span class="bar-name">{{ b.city }}</span>
-                  <span class="bar-track">
-                    <span class="bar-fill"></span>
-                  </span>
-                  <span class="bar-num">{{ b.uptime }}%</span>
-                </li>
-              </ul>
-            </div>
-
-            <!-- Activity feed -->
-            <div class="activity">
-              <div class="activity-head">
-                <span class="act-dot"></span>
-                Aktivitas terbaru
-              </div>
-              <ul class="activity-list">
-                <li
-                  v-for="a in activity"
-                  :key="a.time + a.text"
-                  class="act-row"
-                  :data-tone="a.tone"
-                >
-                  <span class="act-time">{{ a.time }}</span>
-                  <span class="act-text">{{ a.text }}</span>
-                </li>
-              </ul>
-            </div>
-          </div>
 
           <!-- Floating accent -->
           <div class="float-tag" aria-hidden="true">
@@ -253,17 +172,6 @@ const activity = [
 /* ----- Dashboard mockup ----- */
 .dashboard {
   position: relative;
-}
-
-.dash-frame {
-  background: var(--color-surface);
-  border: 1px solid var(--color-line);
-  border-radius: var(--radius-xl);
-  padding: 24px;
-  box-shadow: var(--shadow-lg);
-  display: flex;
-  flex-direction: column;
-  gap: 22px;
 }
 
 .dash-top {
@@ -588,9 +496,6 @@ const activity = [
   .layout {
     grid-template-columns: 1fr;
     gap: 40px;
-  }
-  .dash-frame {
-    padding: 20px;
   }
   .kpi-value {
     font-size: 22px;

@@ -42,7 +42,7 @@ onMounted(() => {
         </h1>
 
         <p class="hero-sub reveal" v-reveal data-delay="200">
-          Sejak Juni 2021, tim lapangan CDS merawat jaringan EDC dan
+          Sejak tahun 2018, tim lapangan CDS merawat jaringan EDC dan
           mengedukasi merchant QRIS Statis di lebih dari 65 kota. Andalkan
           teknisi bersertifikat, SLA terukur, dan dashboard monitoring
           real-time.
